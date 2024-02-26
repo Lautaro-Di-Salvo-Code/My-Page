@@ -21,7 +21,7 @@ export const Header = ({HandleLang, texto}) => {
 
         </div>
         <div className="flex justify-center ">
-            <h1 className="   text-[2.5rem] md:text-[3rem]  vlg:text-[3.7rem]  " name="Lautaro Di Salvo">{texto.header.nombre} <b>Lautaro</b>
+            <h1 className="   text-[2.5rem] md:text-[3rem]  vlg:text-[3.7rem]  " name="Lautaro Di Salvo">{texto.header.nombre} <b>Lautaro </b>
             </h1>
 
         </div>
