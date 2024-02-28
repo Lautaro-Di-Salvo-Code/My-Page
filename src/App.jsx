@@ -159,7 +159,7 @@ const NavBar = () => {
        <div className="father-component">
 
         <Header  />
-        <Main texto={texto}/>
+        <Main />
     {/* boton navegacion de celular */}
         <article 
         className="bg-[#9e9d9df5]  backdrop-blur-3xl max-w-maximoAnchosmallwide
@@ -172,7 +172,7 @@ const NavBar = () => {
         
        </div>
         
-            </ContextoGlobal.Provider>
+        </ContextoGlobal.Provider>
     
     </>
   )

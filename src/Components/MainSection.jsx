@@ -1,11 +1,14 @@
 
+import { useContext } from "react"
 import { Aboutme } from "./SectionChilds/Aboutme"
 import { Contact } from "./SectionChilds/Contact"
 import { Projects } from "./SectionChilds/Projects"
+import { ContextoGlobal } from "../App"
 
-export const Main = ({HandleLang, texto}) => {
+export const Main = () => {
 
 
+    const {texto  } = useContext( ContextoGlobal )
 
     
   return (
@@ -13,7 +16,7 @@ export const Main = ({HandleLang, texto}) => {
 <section id="sobremi" className=" lg:pt-[5rem] pt-[1rem] my-margin-secciontexto-global ">
 
 
-    <Aboutme HandleLang={HandleLang} texto={texto}/>
+    <Aboutme />
 
 
     <article
@@ -42,8 +45,8 @@ export const Main = ({HandleLang, texto}) => {
     </article>
 </section>
 
-    <Projects  texto={texto}/>
-    <Contact  texto={texto}/>
+    <Projects  />
+    <Contact />
     
 
 </>
