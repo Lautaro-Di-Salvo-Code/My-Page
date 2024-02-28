@@ -1,20 +1,9 @@
+import { useContext } from "react"
+import { ContextoGlobal } from "../../App"
 
-export const Projects = ({HandleLang, texto}) => {
+export const Projects = () => {
 
-    // const  es = {
-        
-    //     title: "Proyectos",
-    //     turismoespacial : "Turismo Espacial",
-    //     portfolio: "Mi Portfolio",
-    //     searchcountry: "Busqueda de Paises",
-    //     pizzeria: "Pizzeria",
-    //     odontologia: "Odontologia",
-    //     imagenDeSpaceTurism  : "/src/assets/space.png",
-    //     imagenMiPortfolio  : "/src/assets/",
-    //     codigo : "CODIGO"
-        
-    // }
-
+    const {texto } = useContext( ContextoGlobal )
 
   return (
     <>

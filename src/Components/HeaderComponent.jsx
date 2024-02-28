@@ -1,18 +1,20 @@
+import { ContextoGlobal } from "../App"
 import { Nav } from "./Nav"
+import { useContext } from "react"
 
 
 
 
 
-
-export const Header = ({HandleLang, texto}) => {
-
+export const Header = () => {
+  
+  const {texto } = useContext( ContextoGlobal )
 
 
 
   return (
     <header id="inicio" className="bg-yoCodeando  bg-no-repeat bg-center relative top-[-2rem] bg-cover h-[104dvh] ">
-      <Nav HandleLang={HandleLang} texto={texto}/>
+      <Nav />
       <div
         className="absolute z-index-menor  top-[6rem] flex justify-center flex-wrap content-center flex-col m-auto w-full   h-[81dvh]">
 

@@ -1,5 +1,11 @@
+import { useContext } from "react"
+import { ContextoGlobal } from "../../App"
 
-export const Aboutme = ({HandleLang, texto}) => {
+export const Aboutme = () => {
+
+    const {texto  } = useContext( ContextoGlobal )
+
+
   return (
     <>
 

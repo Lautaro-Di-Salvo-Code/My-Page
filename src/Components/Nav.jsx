@@ -1,12 +1,15 @@
 // import { useRef } from "react"
 // import {NavLink} from "react-router-dom"
 
+import { useContext } from "react"
+import { ContextoGlobal } from "../App"
 
 
 
-export const Nav = ({ HandleLang, texto}) => {
 
+export const Nav = () => {
 
+    const {texto,HandleLang } = useContext( ContextoGlobal )
 
 
 

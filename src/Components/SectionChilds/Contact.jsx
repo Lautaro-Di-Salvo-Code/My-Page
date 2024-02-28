@@ -1,7 +1,9 @@
+import { useContext } from "react"
+import { ContextoGlobal } from "../../App"
 
-export const Contact = ({texto }) => {
+export const Contact = () => {
 
-
+    const {texto } = useContext( ContextoGlobal )
   
   return (
     <>
