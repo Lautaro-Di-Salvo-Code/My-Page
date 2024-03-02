@@ -120,7 +120,7 @@ export const Projects = () => {
                                 
                                    
 
-                                    <a target="_blank" href="https://github.com/Lautaro-Di-Salvo-Code/portfolio-2024"
+                                    <a target="_blank" href="https://github.com/Lautaro-Di-Salvo-Code/My-Page"
                                         className=" py-[.5rem] rounded-xl px-[1rem] bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:cursor-pointer md:hover:scale-110  transition duration-75 ease-linear  box-shadow-tech-desk">{texto.proyectos.codigo}</a>
                                 </div>
                             </section>
