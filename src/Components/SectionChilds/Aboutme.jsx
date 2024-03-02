@@ -126,7 +126,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center "><img 
             className="  ancho-imagenes-tech  "
-                    src="./assets/premiere.svg"/>
+                    src="/src/assets/premiere.svg"/>
                     </div>
             <div>
                 <p className="text-center  text-[1rem] font-semibold text-[#000]">Premiere </p>
