@@ -25,7 +25,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center">
                 <img 
-                className="ancho-imagenes-tech " src="/src/assets/html.svg"/>
+                className="ancho-imagenes-tech " src="../../assets/html.svg"/>
                 
 
             </div>
@@ -38,7 +38,7 @@ export const Aboutme = () => {
             className="flex justify-center flex-col  md:cursor-pointer  bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center">
                 <img 
-                className="ancho-imagenes-tech " src="/src/assets/css.svg"/>
+                className="ancho-imagenes-tech " src="../../assets/css.svg"/>
                 
 
             </div>
@@ -51,7 +51,7 @@ export const Aboutme = () => {
             className="flex justify-center flex-col  md:cursor-pointer  bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center">
                 <img 
-                className="ancho-imagenes-tech " src="/src/assets/js.svg"/>
+                className="ancho-imagenes-tech " src="../../assets/js.svg"/>
                 
 
             </div>
@@ -63,7 +63,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center"><img 
             className="ancho-imagenes-tech "
-                    src="/src/assets/react.svg"/>
+                    src="../../assets/react.svg"/>
                     </div>
             <div>
                 <p className="text-center  text-[1rem] font-semibold text-[#000]">React Js</p>
@@ -73,7 +73,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className=" flex justify-center"><img 
             className="ancho-imagenes-tech "
-                src="/src/assets/tailwind.svg"/>
+                src="../../assets/tailwind.svg"/>
                 </div>
                 <div>
                     <p className="text-center text-[1rem] font-semibold text-[#000]">Tailwind</p>
@@ -84,7 +84,7 @@ export const Aboutme = () => {
             className="flex justify-center flex-col md:cursor-pointer  bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center"><img 
             className="ancho-imagenes-tech "
-                    src="/src/assets/sass.svg"/>
+                    src="../../assets/sass.svg"/>
                     </div>
             <div>
                 <p className="text-center  text-[1rem] font-semibold text-[#000]">Sass</p>
@@ -95,7 +95,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center "><img 
             className="  ancho-imagenes-tech "
-                src="/src/assets/git.svg"/>
+                src="../../assets/git.svg"/>
                 </div>
                 <div>
                     <p className="text-center  text-[1rem] font-semibold text-[#000]"> Git </p>
@@ -105,7 +105,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center "><img 
             className="  h-auto w-[4rem] md:w-[5rem] lg:w-[5.5rem]"
-                    src="/src/assets/node.svg"/>
+                    src="../../assets/node.svg"/>
                     </div>
 
         
@@ -116,7 +116,7 @@ export const Aboutme = () => {
             <div className="flex justify-center">
               <img 
             className=" ancho-imagenes-tech "
-                    src="/src/assets/figma.svg"/>
+                    src="../../assets/figma.svg"/>
                     </div>
             <div>
                 <p className="text-center  text-[1rem] font-semibold text-[#000]">Figma</p>
@@ -126,7 +126,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center "><img 
             className="  ancho-imagenes-tech  "
-                    src="/src/assets/premiere.svg"/>
+                    src="../../assets/premiere.svg"/>
                     </div>
             <div>
                 <p className="text-center  text-[1rem] font-semibold text-[#000]">Premiere </p>

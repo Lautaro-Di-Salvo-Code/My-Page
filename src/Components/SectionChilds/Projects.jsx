@@ -26,7 +26,7 @@ export const Projects = () => {
                         {/* <!-- proyecto espacio --> */}
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]  border-projects">
                             <div className="active md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="/src/assets/space.png" alt=""/>
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/space.png" alt=""/>
 
                             </div>
                             <section>
@@ -79,7 +79,7 @@ export const Projects = () => {
                         {/* <!-- portfolio --> */}
                         <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
                             <div className="active md:order-3 md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="/src/assets/imagen-portfolio-proyecto.png"
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
                                     alt=""/>
 
                             </div>
@@ -129,7 +129,7 @@ export const Projects = () => {
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem] border-projects">
 
                             <div className="active md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="/src/assets/frame crocante.png"
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame crocante.png"
                                     alt=""/>
     
                             </div>
@@ -140,7 +140,7 @@ export const Projects = () => {
                                 </div>
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
-                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="/src/assets/wix.svg" alt=""/>
+                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
                                     </div>
                                 </div>
                                 <div className=" m-4 flex justify-center gap-1">
@@ -160,7 +160,7 @@ export const Projects = () => {
                         <article className="mx-auto md:grid md:grid-cols-3  py-[1rem] ">
 
                             <div className="active md:order-3 md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="/src/assets/frame odontologia.png"
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
                                     alt=""/>
     
                             </div>
@@ -171,7 +171,7 @@ export const Projects = () => {
                                 </div>
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
-                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="/src/assets/wix.svg" alt=""/>
+                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
                                     </div>
                                 </div>
                                 <div className=" m-4 flex justify-evenly gap-1">
