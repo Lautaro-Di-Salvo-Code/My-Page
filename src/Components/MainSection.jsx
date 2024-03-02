@@ -26,7 +26,7 @@ export const Main = () => {
 
             <article className=" flex justify-center p-[23px] md:p-[1.6rem] w-full  text-center md:col-span-2">
                 <p className="text-[1.2rem] md:text-[24px] text-black leading-8  text-[#000] font-semibold">
-                    <b className="w-full text-[2rem]  text-black  md:text-[2rem] ">{texto.sobreMi.experiencia}</b>  <br />
+                    <b className="w-full text-[2rem]  text-black  md:text-[2rem] " aria-description={texto.sobreMi.experiencia}>{texto.sobreMi.experiencia}</b>  <br />
                     {texto.sobreMi.sobremi1} <br />  {texto.sobreMi.sobremi2}<br />{texto.sobreMi.oferta1} <br />  {texto.sobreMi.busquedalaboralmia}
                 </p>
             </article>

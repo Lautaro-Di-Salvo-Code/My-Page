@@ -83,7 +83,7 @@ return (
             <div className="mx-auto">
             
 
-                <a onClick={clickOptions} className=" text-[2rem] mx-4 text-[#000] " href="index.html#sobremi">{texto.navbar.sobremi}</a>
+                <a onClick={clickOptions} className=" text-[2rem] mx-4 text-[#000] " href="index.html#sobremi" >{texto.navbar.sobremi}</a>
             
             </div>
             <div className="mx-auto">
@@ -96,7 +96,7 @@ return (
             </div>
             <div className="mx-auto bg-[#d9d9d9] my-[2rem]">
             <button onClick={HandleLang} className=" mx-4 text-[2rem] text-[#000]">
-            {texto.botonIdioma}
+                    {texto.botonIdioma}
                     </button>
             </div>
         </div>
