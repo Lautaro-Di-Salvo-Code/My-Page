@@ -136,7 +136,7 @@ export const Aboutme = () => {
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
             <div className="flex justify-center ">
               <img 
-              className="ancho-imagenes-tech" src="/src/assets/wix.svg"/>
+              className="ancho-imagenes-tech" src="../../assets/wix.svg"/>
               
 
             </div>
