@@ -22,9 +22,9 @@ export const Contact = () => {
 
         
         <article>
-            <div className="flex justify-center w-[20rem] mx-auto">
+            <div className="flex justify-center w-[62%] mx-auto">
 
-                <b className="text-center text-[1.2rem]  leading-[3rem]  md:text-[2rem]">{texto.contacto.agradecimiento} !</b>
+                <b className="text-center text-[1.2rem] text-pretty  leading-[3rem]  md:text-[2rem]">{texto.contacto.agradecimiento} !</b>
             </div>
 
         

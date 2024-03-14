@@ -23,21 +23,22 @@ export const Header = () => {
 
         </div>
         <div className="flex justify-center ">
-            <h1 className="   text-[2.5rem] md:text-[3rem]  vlg:text-[3.7rem]  " name="Lautaro Di Salvo">{texto.header.nombre} <b>Lautaro</b>
+            <h1 className="   text-[9vw] md:text-[3rem]  vlg:text-[3.7rem]  " name="Lautaro Di Salvo">{texto.header.nombre} <b>Lautaro Di Salvo</b>
             </h1>
 
         </div>
         <div>
-            <h1 className="es   flex flex-row flex-wrap content-center justify-center text-[7vw] md:text-[3rem]  vlg:text-[3.7rem]">
+            <h2 className="es   flex flex-row flex-wrap content-center justify-center text-[8vw] md:text-[3rem]  vlg:text-[3.7rem]">
                 <b className="flex flex-wrap content-center  ">
                   <img className=" h-[1rem]  md:h-[2.5rem] lg:h-[3rem]"
-                        src="../../assets/pico-abre.svg" name="Front-End Developer" alt=""/></b>
+                        src="../../assets/pico-abre.svg" name="Front-End Developer" alt=""/>
+                        </b>
 
                 {texto.header.profesion}
 
                 <b className="flex flex-wrap content-center"><img className=" h-[1rem]  md:h-[2.5rem] lg:h-[3rem]"
                         src="../../assets/pico-cierre.svg" alt=""/></b>
-            </h1>
+            </h2>
 
 
         </div>
