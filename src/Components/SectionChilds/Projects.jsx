@@ -26,7 +26,10 @@ export const Projects = () => {
                         {/* <!-- proyecto espacio --> */}
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]  border-projects">
                             <div className="active md:col-span-2">
+                                <a target="_blank" href="https://turismo-espacial-practica-front.netlify.app/">
+
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/space.png" alt=""/>
+                                </a>
 
                             </div>
                             <section>
@@ -71,7 +74,7 @@ export const Projects = () => {
                                         className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
 
                                     <a target="_blank"
-                                        href="https://github.com/Lautaro-Di-Salvo-Code/practica-sunnyside/tree/master/code"
+                                        href="https://github.com/Lautaro-Di-Salvo-Code/proyecto-turismo-espacial"
                                         className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
                                 </div>
                             </section>
@@ -129,8 +132,11 @@ export const Projects = () => {
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem] border-projects">
 
                             <div className="active md:col-span-2">
+                                <a href="https://lautarodisalvosmco.wixsite.com/prueba1smc" target="_blank">
+
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame crocante.png"
                                     alt=""/>
+                                    </a>
     
                             </div>
                             <section>
@@ -140,7 +146,9 @@ export const Projects = () => {
                                 </div>
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
+
                                         <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
+                                        
                                     </div>
                                 </div>
                                 <div className=" m-4 flex justify-center gap-1">
@@ -156,12 +164,14 @@ export const Projects = () => {
                         </article>
 
                         {/* <!-- odontologia --> */}
-                        {/* <!-- border-projects --> */}
                         <article className="mx-auto md:grid md:grid-cols-3  py-[1rem] ">
 
                             <div className="active md:order-3 md:col-span-2">
+                                <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/farmacia-centrosalud">
+
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
                                     alt=""/>
+                                    </a>
     
                             </div>
                             <section>
@@ -171,7 +181,9 @@ export const Projects = () => {
                                 </div>
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
+
                                         <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
+                                
                                     </div>
                                 </div>
                                 <div className=" m-4 flex justify-evenly gap-1">
