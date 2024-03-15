@@ -1,10 +1,21 @@
 import { useContext } from "react"
 import { ContextoGlobal } from "/src/App"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all"
 
 export const Aboutme = () => {
+    gsap.registerPlugin(ScrollTrigger) 
 
+    gsap.to(".a", {
+        scrollTrigger: {
+            trigger: ".a",
+            toggleActions: "restart pause reverse pause"
+        }, // start the animation when ".box" enters the viewport (once)
+        opacity: 0,
+        duration: 2
+      });
     const {texto  } = useContext( ContextoGlobal )
-
+    
 
   return (
     <>
@@ -19,7 +30,7 @@ export const Aboutme = () => {
 
 
 
-    <p className=" flex justify-center w-full text-[1.3rem] my-[5px] md:text-[2rem] text-titles-section-color">{texto.sobreMi.tecnologias}</p>
+    <p className="a flex justify-center w-full text-[1.3rem] my-[5px] md:text-[2rem] text-titles-section-color">{texto.sobreMi.tecnologias}</p>
 
     <section className=" flex flex-wrap justify-center mx-auto  mb-[1rem]  gap-[7px]  max-w-maximoAnchosmallwide">
         <div className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">

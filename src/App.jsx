@@ -1,7 +1,8 @@
 
 import { Header } from './Components/HeaderComponent'
 import { Main } from "./Components/MainSection"
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
+import {gsap} from "gsap"
 
 
 
@@ -9,6 +10,18 @@ export const ContextoGlobal = createContext()
 
 function App() {
   
+  const timelinE = gsap.timeline()
+
+  useEffect(() => {
+   
+    
+    const infoPresentacion = document.querySelectorAll(".infoPresentacion")
+    timelinE.from(infoPresentacion, {opacity: 0 , duration:2.2, ease: 1})
+    
+    
+  }, [])
+
+
   const LanguagePage = {
     es: {
      botonIdioma : "English" ,
@@ -162,7 +175,7 @@ const NavBar = () => {
         <Main />
     {/* boton navegacion de celular */}
         <article 
-        className="bg-[#9e9d9df5]  backdrop-blur-3xl max-w-maximoAnchosmallwide
+        className="bg-[#9e9d9df5] infoPresentacion  backdrop-blur-3xl max-w-maximoAnchosmallwide
         md:hidden fixed  mx-auto left-7 right-7 rounded-xl bottom-3 h-[8dvh] z-index-sup  ">
           <div className="nav-button-mob w-full flex flex-wrap justify-around content-center h-[8vh] p-3">
             <img   onClick={NavBar} id="boton-menu" className="w-[4rem] z-40" 
