@@ -1,19 +1,8 @@
 import { useContext } from "react"
 import { ContextoGlobal } from "/src/App"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/all"
 
 export const Aboutme = () => {
-    gsap.registerPlugin(ScrollTrigger) 
-
-    gsap.to(".a", {
-        scrollTrigger: {
-            trigger: ".a",
-            toggleActions: "restart pause reverse pause"
-        }, // start the animation when ".box" enters the viewport (once)
-        opacity: 0,
-        duration: 2
-      });
+   
     const {texto  } = useContext( ContextoGlobal )
     
 
