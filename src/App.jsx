@@ -77,9 +77,11 @@ function App() {
       },
       contacto: {
         titulo: "Contacto ",
+        nombre: "Nombre",
+        apellido: "Apellido",
         agradecimiento: "Gracias por llegar hasta aquí",   
         enviar: "Enviar",
-        placeholdertextarea: "Si deseas agregar algun comentario"
+        placeholdertextarea: "Comentario que desees agregar"
       }
   },
     en:{
@@ -133,9 +135,11 @@ function App() {
      },
      contacto: {
       titulo: "Contact ",
+      nombre: "Name",
+      apellido: "Last name",
       agradecimiento: "Thanks for getting here",   
       enviar: "Submit",
-      placeholdertextarea: "If you want to add any comments"
+      placeholdertextarea: "Coment if you want to add"
     } 
   }
   }

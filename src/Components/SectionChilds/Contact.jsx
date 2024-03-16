@@ -63,15 +63,19 @@ export const Contact = () => {
                 </article>
             </article>
         </div>
-        <article>
-            <form action="" className="flex flex-col justify-center">
-                <input className="bg-box-sections-bgcolor placeholder:text-[#000]"  type="email" name="" id="" placeholder="Email "/>
-                <textarea className="bg-box-sections-bgcolor placeholder:text-[#000]" name="" id="" cols="30" rows="10"
+            <form action="https://formspree.io/f/xzbnapnk" method="POST" className="flex flex-col justify-center">
+                <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
+                 type="text" name="first name" id="first name" placeholder={texto.contacto.nombre}/>
+                <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]" 
+                 type="text" name="last name" id="last name" placeholder={texto.contacto.apellido}/>
+                <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]" 
+                 type="email" name="email" id="email" placeholder="Email "/>
+                <textarea className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
+                 name="message" id="message" cols="30" rows="10"
                 placeholder={texto.contacto.placeholdertextarea}></textarea>
-                <button className=" text-[#2f2e2e]  w-[6rem] mx-auto  h-[3rem] ">{texto.contacto.enviar}</button>
+                <button className=" text-[#2f2e2e]   w-[6rem] mx-auto  h-[3rem] ">{texto.contacto.enviar}</button>
             </form>
             
-        </article>
     </section>
    
     </>
