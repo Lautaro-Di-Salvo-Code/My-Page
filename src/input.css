@@ -4,8 +4,12 @@
 @tailwind utilities;
 
 
-body{
+html{
     margin: 0;
+    scrollbar-color: #4a4949 #fff;
+    scrollbar-width: thin;
+}
+.scroll-style{
 }
 div{
     margin: 0;
@@ -208,4 +212,3 @@ b{
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
