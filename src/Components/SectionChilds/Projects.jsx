@@ -77,6 +77,56 @@ export const Projects = () => {
                                 </div>
                             </section>
                         </article>
+                       
+                        {/* <!-- portfolio --> */}
+                        <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
+                            <div className="active md:order-3 md:col-span-2">
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
+                                    alt=""/>
+
+                            </div>
+                            <section className="">
+                                <div className="projects-text-color">
+                                    <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.portfolio} </p>
+                                </div>
+                                <div className=" info-projects">
+
+
+                                    <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto"> 
+                                        <div className="flex justify-center flex-col ">
+                                            <div className="flex justify-center">
+
+                                            </div>
+                                            <div className=" bg-[#3d8af6]">
+                                                <p className="text-center   text-[1.2rem]">React Js</p>
+
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-center flex-col ">
+                                            <div className="flex justify-center">
+
+                                            </div>
+                                            <div className="pastilla-tailwind bg-[#3fe1f6]">
+                                                <p className="text-center text-[#000] text-[1.2rem]">Tailwind</p>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+
+
+
+                                </div>
+                                <div className=" m-4 flex justify-evenly gap-1">
+                                
+                                   
+
+                                    <a target="_blank" href="https://github.com/Lautaro-Di-Salvo-Code/My-Page"
+                                        className=" py-[.5rem] rounded-xl px-[1rem] bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:cursor-pointer md:hover:scale-110  transition duration-75 ease-linear  box-shadow-tech-desk">{texto.proyectos.codigo}</a>
+                                </div>
+                            </section>
+                        </article>
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]  border-projects">
                             <div className="active md:col-span-2">
                                 <a target="_blank" href="https://turismo-espacial-practica-front.netlify.app/">
@@ -129,55 +179,6 @@ export const Projects = () => {
                                     <a target="_blank"
                                         href="https://github.com/Lautaro-Di-Salvo-Code/proyecto-turismo-espacial"
                                         className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
-                                </div>
-                            </section>
-                        </article>
-                        {/* <!-- portfolio --> */}
-                        <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                            <div className="active md:order-3 md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
-                                    alt=""/>
-
-                            </div>
-                            <section className="">
-                                <div className="projects-text-color">
-                                    <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.portfolio} </p>
-                                </div>
-                                <div className=" info-projects">
-
-
-                                    <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto"> 
-                                        <div className="flex justify-center flex-col ">
-                                            <div className="flex justify-center">
-
-                                            </div>
-                                            <div className=" bg-[#3d8af6]">
-                                                <p className="text-center   text-[1.2rem]">React Js</p>
-
-                                            </div>
-                                        </div>
-                                        <div className="flex justify-center flex-col ">
-                                            <div className="flex justify-center">
-
-                                            </div>
-                                            <div className="pastilla-tailwind bg-[#3fe1f6]">
-                                                <p className="text-center text-[#000] text-[1.2rem]">Tailwind</p>
-
-                                            </div>
-                                        </div>
-                                        
-
-                                    </div>
-
-
-
-                                </div>
-                                <div className=" m-4 flex justify-evenly gap-1">
-                                
-                                   
-
-                                    <a target="_blank" href="https://github.com/Lautaro-Di-Salvo-Code/My-Page"
-                                        className=" py-[.5rem] rounded-xl px-[1rem] bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:cursor-pointer md:hover:scale-110  transition duration-75 ease-linear  box-shadow-tech-desk">{texto.proyectos.codigo}</a>
                                 </div>
                             </section>
                         </article>
