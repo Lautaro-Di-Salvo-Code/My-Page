@@ -41,7 +41,7 @@ return (
                 className=" flex flex-row flex-wrap h-[7rem] mx-auto items-center justify-around max-w-maximoAnchosmallwide vlg:max-w-maximoAnchoUltrawide">
                 <div className="   pt-[1rem] div-nav1">
 
-                    <a className=" cursor-pointer NavPresentacion nav-link1  hover:text-[text-[#dddcdc]    md:text-[1.3rem]  vlg:text-[2rem]    mx-4"
+                    <a className=" cursor-pointer NavPresentacion nav-link1  hover:text-[text-[#dddcdc]    md:text-[1.3rem]  vlg:text-[2rem]    mx-4" 
                         href="index.html#inicio">{texto.navbar.inicio}</a>
                 </div>
 
@@ -60,13 +60,10 @@ return (
                     <a className="cursor-pointer NavPresentacion nav-link4   hover:text-[text-[#dddcdc]  mx-4  md:text-[1.3rem] vlg:text-[2rem]  "
                         href="index.html#contacto">{texto.navbar.contacto}</a>
                 </div>
-                <div className=" pt-[1.4rem] div-nav4 NavPresentacion">
-                    <button onClick={HandleLang} className="botonn nav-link4  md:hover:bg-[#3f3e3e]  mx-4  md:text-[1.3rem] " >
-                        {texto.botonIdioma}
-                    </button>
-                    {/* <button onClick={HandleLang} className="cursor-pointer  nav-link4 md: md:hover:bg-[#3f3e3e]  mx-4  md:text-[1.3rem] vlg:text-[2rem]">
+                <div className=" pt-[1.5rem] div-nav4 NavPresentacion">
+                    <button onClick={HandleLang} className= "botonn cursor-pointer  nav-link4   mx-4  md:text-[1.3rem] ">
                     {texto.botonIdioma}
-                    </button> */}
+                    </button>
                 </div>
                 {/* <form className="pt-[1.4rem] ">
                 
