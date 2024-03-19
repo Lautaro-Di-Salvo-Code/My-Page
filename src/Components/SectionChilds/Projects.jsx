@@ -29,7 +29,7 @@ export const Projects = () => {
                             <div className="active md:col-span-2 md:order-3">
                                 <a target="_blank" href="https://search-country-web.netlify.app/#/All">
 
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="src/assets/SearchCountry.png" alt="proyecto busqueda paises"/>
+                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/SearchCountry.png" alt="proyecto busqueda paises"/>
                                 </a>
 
                             </div>
