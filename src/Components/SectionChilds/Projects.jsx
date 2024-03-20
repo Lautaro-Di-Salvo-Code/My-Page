@@ -15,7 +15,7 @@ export const Projects = () => {
            {texto.proyectos.titulo}</h2>
     </div>
 
-    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[109rem] md:h-[81rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
+    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[128rem] md:h-[81rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
         <article className="  relative top-[3rem]  ">
             <div className="mx-auto w-full   absolute top-0  index2">
 
@@ -26,7 +26,7 @@ export const Projects = () => {
 
                         {/* <!-- proyecto espacio --> */}
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                            <div className="active md:col-span-2 md:order-3">
+                            <div className="active md:col-span-2 ">
                                 <a target="_blank" href="https://search-country-web.netlify.app/#/All">
 
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/SearchCountry.png" alt="proyecto busqueda paises"/>
@@ -80,7 +80,7 @@ export const Projects = () => {
                        
                         {/* <!-- portfolio --> */}
                         <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                            <div className="active md:order-3 md:col-span-2">
+                            <div className="active  md:col-span-2">
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
                                     alt=""/>
 
@@ -220,7 +220,7 @@ export const Projects = () => {
                         {/* <!-- odontologia --> */}
                         <article className="mx-auto md:grid md:grid-cols-3  py-[1rem] ">
 
-                            <div className="active md:order-3 md:col-span-2">
+                            <div className="active  md:col-span-2">
                                 <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/farmacia-centrosalud">
 
                                 <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
