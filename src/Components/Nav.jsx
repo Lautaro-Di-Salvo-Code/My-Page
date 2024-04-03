@@ -3,7 +3,7 @@
 
 import { useContext, useEffect } from "react"
 import { ContextoGlobal } from "../App"
-import {gsap} from "gsap"
+// import {gsap} from "gsap"
 
 
 
@@ -12,11 +12,10 @@ export const Nav = () => {
 
     const {texto,HandleLang } = useContext( ContextoGlobal )
 
-    useEffect(() => {
-      
-       const nombreSeleccionado = document.querySelectorAll(".NavPresentacion")
-       gsap.from(nombreSeleccionado, {opacity: 0 , duration: 1, y: "2rem" , stagger: 0.2})
-     }, [])
+    // useEffect(() => {      
+    // const nombreSeleccionado = document.querySelectorAll(".NavPresentacion")
+    // gsap.from(nombreSeleccionado, {opacity: 0 , duration: 1, y: "2rem" , stagger: 0.2})
+    // }, [])
 
 
 
