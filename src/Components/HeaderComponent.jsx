@@ -72,7 +72,7 @@ export const Header = () => {
         </section>
         <section className=" flex flex-row justify-center mt-5 infoPresentacion">
 
-            <a href="../../dist/assets/CV SIMPLIFICADO FORNT END 2024.pdf" target="_blank" 
+            <a href="../../public/assets/CV SIMPLIFICADO FORNT END 2024.pdf" target="_blank" 
                 className=" flex flex-wrap justify-center content-center rounded-[2rem]    bg-[#040405a5] w-[4rem] h-[2rem]  text-[1.6rem] md:w-[6rem] md:h-[3rem] lg:h-[3.4rem]  font-family-mochi transition-all 1s  md:hover:scale-105">CV
                 </a>
         </section>
