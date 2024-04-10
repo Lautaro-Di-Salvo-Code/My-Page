@@ -30,13 +30,16 @@ export const ArrayTech = [
         "img": "../../assets/git.svg"
     },
     {   "id": 4351645354,
-        "img": "../../assets/node.svg"
+        "img": "../../assets/node.svg",
+        
     },
     {   "id": 4355656345354,
-        "img": "../../assets/figma.svg"
+        "img": "../../assets/figma.svg",
+        "tecnologia": "Figma"
     },
     {   "id": 4355565645354,
-        "img": "../../assets/premiere.svg"
+        "img": "../../assets/premiere.svg",
+        "tecnologia": "Premiere",
     },
     {   "id": 4355656453504,
         "img": "../../assets/wix.svg"
