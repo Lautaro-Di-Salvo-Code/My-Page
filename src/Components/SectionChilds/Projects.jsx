@@ -29,7 +29,7 @@ export const Projects = () => {
                             <div className="active md:col-span-2 ">
                                 <a target="_blank" href="https://search-country-web.netlify.app/#/All">
 
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/SearchCountry.png" alt="proyecto busqueda paises"/>
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/SearchCountry.png" alt="proyecto busqueda paises"/>
                                 </a>
 
                             </div>
@@ -81,7 +81,7 @@ export const Projects = () => {
                         {/* <!-- portfolio --> */}
                         <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
                             <div className="active  md:col-span-2">
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
                                     alt=""/>
 
                             </div>
@@ -131,7 +131,7 @@ export const Projects = () => {
                             <div className="active md:col-span-2">
                                 <a target="_blank" href="https://turismo-espacial-practica-front.netlify.app/">
 
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/space.png" alt=""/>
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/space.png" alt=""/>
                                 </a>
 
                             </div>
@@ -188,7 +188,7 @@ export const Projects = () => {
                             <div className="active md:col-span-2">
                                 <a href="https://lautarodisalvosmco.wixsite.com/prueba1smc" target="_blank">
 
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame crocante.png"
+                                <img className=" md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame crocante.png"
                                     alt=""/>
                                     </a>
     
@@ -201,7 +201,7 @@ export const Projects = () => {
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
 
-                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
+                                        <img className="on-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
                                         
                                     </div>
                                 </div>
@@ -223,7 +223,7 @@ export const Projects = () => {
                             <div className="active  md:col-span-2">
                                 <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/farmacia-centrosalud">
 
-                                <img className="md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
                                     alt=""/>
                                     </a>
     
@@ -236,7 +236,7 @@ export const Projects = () => {
                                 <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
                                     <div className="flex justify-center ">
 
-                                        <img className=" transition duration-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
+                                        <img className="on-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt=""/>
                                 
                                     </div>
                                 </div>
@@ -246,22 +246,11 @@ export const Projects = () => {
                                         className="py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk ">
                                         WEB
                                     </a>
-        
-
                                 </div>
                             </section>
                         </article>
-
-
-
-
                     </section>
                 </article>
-
-
-
-
-
             </div>
         </article>
 
