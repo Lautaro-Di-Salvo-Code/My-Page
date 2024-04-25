@@ -15,7 +15,7 @@ export const Projects = () => {
            {texto.proyectos.titulo}</h2>
     </div>
 
-    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[128rem] md:h-[95rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
+    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[154rem] md:h-[95rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
         <article className="  relative top-[3rem]  ">
             <div className="mx-auto w-full   absolute top-0  index2">
 
