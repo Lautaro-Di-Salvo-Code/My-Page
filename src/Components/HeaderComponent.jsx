@@ -1,7 +1,7 @@
 import { ContextoGlobal } from "../App"
 import { Nav } from "./Nav"
 import { useContext, useEffect } from "react"
-import {gsap} from "gsap"
+// import {gsap} from "gsap"
 
 
 
@@ -9,17 +9,17 @@ import {gsap} from "gsap"
 
 export const Header = () => {
   
-  const timelinE = gsap.timeline()
+  // const timelinE = gsap.timeline()
 
-  useEffect(() => {
+  // useEffect(() => {
    
-    const nombreSeleccionado = document.querySelectorAll(".Presentacion")
-    const infoPresentacion = document.querySelectorAll(".infoPresentacion")
-    timelinE.from(nombreSeleccionado, {opacity: 0 , duration:2.2, y: "3rem"  })
-    .from(infoPresentacion, {opacity: 0 , duration:2.2, ease: 1})
+  //   const nombreSeleccionado = document.querySelectorAll(".Presentacion")
+  //   const infoPresentacion = document.querySelectorAll(".infoPresentacion")
+  //   timelinE.from(nombreSeleccionado, {opacity: 0 , duration:2.2, y: "3rem"  })
+  //   .from(infoPresentacion, {opacity: 0 , duration:2.2, ease: 1})
     
     
-  }, [])
+  // }, [])
 
 
 
