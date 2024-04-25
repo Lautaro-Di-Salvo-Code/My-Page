@@ -70,6 +70,7 @@ function App() {
           titulo: "Proyectos",
           turismoespacial : "Turismo Espacial",
           portfolio: "Mi portfolio",
+          searchGithub: "Buscador de cuenta en Github",
           searchcountry: "Busqueda de Paises",
           pizzeria: "Pizzeria",
           odontologia: "Odontologia",
@@ -129,6 +130,7 @@ function App() {
         titulo: "Projects",
         turismoespacial : "Space Turism",
         portfolio : "My Portfolio",
+        searchGithub: "Search Github",
         searchcountry: "Search a Country",
         pizzeria: "Pizza Shop",
         odontologia: "Odontology"

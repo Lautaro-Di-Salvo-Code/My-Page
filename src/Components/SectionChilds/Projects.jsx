@@ -15,7 +15,7 @@ export const Projects = () => {
            {texto.proyectos.titulo}</h2>
     </div>
 
-    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[128rem] md:h-[81rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
+    <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[128rem] md:h-[95rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
         <article className="  relative top-[3rem]  ">
             <div className="mx-auto w-full   absolute top-0  index2">
 
@@ -24,6 +24,59 @@ export const Projects = () => {
                     <section className=" ">
 
 
+                        {/* <!-- proyecto buscador de cuenta github --> */}
+                        <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
+                            <div className="active md:col-span-2 ">
+                                <a target="_blank" href="https://prueba-tecnica-lautaro.netlify.app/">
+
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="/public/assets/vista-desktop-mobile-githubsearch.png" alt="proyecto busqueda paises"/>
+                                </a>
+
+                            </div>
+                            <section>
+
+                                <div className="">
+                                    <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.searchGithub}</p>
+                                </div>
+                                <div className=" ">
+
+                                <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto"> 
+                                        <div className="flex justify-center flex-col ">
+                                            <div className="flex justify-center">
+
+                                            </div>
+                                            <div className=" bg-[#3d8af6]">
+                                                <p className="text-center   text-[1.2rem]">React Js</p>
+
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-center flex-col ">
+                                            <div className="flex justify-center">
+
+                                            </div>
+                                            <div className="pastilla-tailwind bg-[#4352dc]">
+                                                <p className="text-center text-[#fff] text-[1.2rem]">CSS</p>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+
+
+
+                                </div>
+                                <div className=" m-4 flex justify-evenly gap-1 ">
+
+                                    <a target="_blank" href="https://prueba-tecnica-lautaro.netlify.app/"
+                                        className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
+
+                                    <a target="_blank"
+                                        href="https://github.com/Lautaro-Di-Salvo-Code/prueba-tecnica-buscadorPerfilGitHub"
+                                        className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
+                                </div>
+                            </section>
+                        </article>
                         {/* <!-- proyecto espacio --> */}
                         <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
                             <div className="active md:col-span-2 ">
