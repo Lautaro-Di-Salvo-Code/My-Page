@@ -29,7 +29,7 @@ export const Projects = () => {
                             <div className="active md:col-span-2 ">
                                 <a target="_blank" href="https://prueba-tecnica-lautaro.netlify.app/">
 
-                                <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/vista-desktop-mobile-githubsearch.png" alt="proyecto busqueda paises"/>
+                                <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/vista-desktop-mobile-githubsearch.png" alt="buscador de github"/>
                                 </a>
 
                             </div>
