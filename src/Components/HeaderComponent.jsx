@@ -61,7 +61,7 @@ export const Header = () => {
         </section>
         <section className=" flex flex-row justify-center mt-5 ">
 
-            <a href="https://drive.google.com/file/d/1z-lzDib4rdmd0yb3bJAQhl69wdTW5qQv/view?usp=sharing" target="_blank" 
+            <a href="https://drive.google.com/file/d/1pXwmZRm6xDqpb9xMEDMannrKCTM0vv9G/view?usp=sharing" target="_blank" 
                 className=" flex flex-wrap justify-center content-center rounded-[2rem]    bg-[#040405a5] w-[4rem] h-[2rem]  text-[1.6rem] md:w-[6rem] md:h-[3rem] lg:h-[3.4rem]  font-family-mochi transition-all 1s  md:hover:scale-105">CV
                 </a>
         </section>
