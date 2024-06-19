@@ -29,10 +29,10 @@ export const ArrayTech = [
         "tecnologia": "Git",
         "img": "../../assets/git.svg"
     },
-    {   "id": 4351645354,
-        "img": "../../assets/node.svg",
+    // {   "id": 4351645354,
+    //     "img": "../../assets/node.svg",
         
-    },
+    // },
     {   "id": 4355656345354,
         "img": "../../assets/figma.svg",
         "tecnologia": "Figma"
