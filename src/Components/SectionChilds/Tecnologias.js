@@ -46,19 +46,19 @@ export const ArrayTech = [
     },
     {   "id": 76876867,
         "tecnologia": "TypeScript",
-        "img": "../../assets/typescriptSVG.svg"
+        "img": "../../assets/iconoTS.svg"
     },
     {   "id": 43653453453504,
         "tecnologia": "ReduxToolkit",
-        "img": "../../assets/reduxSVG.svg"
+        "img": "../../assets/iconoRedux.svg"
     },
     {   "id": 34576656453504,
         "tecnologia": "ReactQuery",
-        "img": "../../assets/react querySVG.svg"
+        "img": "../../assets/iconoReactQ.svg"
     },
     {   "id": 845345656453504,
         "tecnologia": "Firebase",
-        "img": "../../assets/firebaseSVG.svg"
+        "img": "../../assets/iconoFirebase.svg"
     },
 ]
 
