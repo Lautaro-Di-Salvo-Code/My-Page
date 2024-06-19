@@ -23,6 +23,10 @@ export const LanguagePage = {
       react: "React JS",
       figma: "Figma",
       git: "Git",
+      RQ: "React Query",
+      TS:"TypeScript",
+      Redux:"ReduxTkit",
+      firebase:"Firebase"
     },
     sobreMi: {
       titulo: "Sobre Mí",
@@ -85,6 +89,10 @@ export const LanguagePage = {
       react: "React JS",
       figma: "Figma",
       git: "Git",
+      RQ: "React Query",
+      TS:"TypeScript",
+      Redux:"ReduxTkit",
+      firebase:"Firebase"
     },
     sobreMi: {
       titulo: "About Me",

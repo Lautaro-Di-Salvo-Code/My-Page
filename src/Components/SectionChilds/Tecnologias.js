@@ -44,6 +44,22 @@ export const ArrayTech = [
     {   "id": 4355656453504,
         "img": "../../assets/wix.svg"
     },
+    {   "id": 76876867,
+        "tecnologia": "TypeScript",
+        "img": "../../assets/typescriptSVG.svg"
+    },
+    {   "id": 43653453453504,
+        "tecnologia": "ReduxToolkit",
+        "img": "../../assets/reduxSVG.svg"
+    },
+    {   "id": 34576656453504,
+        "tecnologia": "ReactQuery",
+        "img": "../../assets/react querySVG.svg"
+    },
+    {   "id": 845345656453504,
+        "tecnologia": "Firebase",
+        "img": "../../assets/firebaseSVG.svg"
+    },
 ]
 
     
