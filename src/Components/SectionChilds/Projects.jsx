@@ -1,5 +1,11 @@
 import { useContext } from "react"
 import { ContextoGlobal } from "../../App"
+import data from '../../ObjectData/ObjectData copy.json'
+import { ArrayTech } from "./Tecnologias"
+import '../SectionChilds/stylesLinksProjects.css'
+
+// console.log(data)
+const dataProjects = data.es.proyectos
 
 export const Projects = () => {
 
@@ -12,360 +18,55 @@ export const Projects = () => {
                 <h2 id="proyectos"
                     className=" lg:pt-[5rem] pt-[2rem]  font-bold tracking-[5px]  text-[2rem]
             md:text-[3rem]  text-titles-section-color">
-                    {texto.proyectos.titulo}</h2>
+                    Proyectos</h2>
             </div>
-
-            <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[180rem] md:h-[111rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
+            <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[171rem] md:h-[105rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
                 <article className="  relative top-[3rem]  ">
                     <div className="mx-auto w-full   absolute top-0  index2">
-
-                        <article className=" gap-7 p-5 text-center ">
-
+                        <article className="h-fit gap-7 p-5 text-center ">
                             <section className=" ">
+                                {
+                                    dataProjects.map(e => (
+                                        <article key={e.id} className="mx-auto md:grid md:grid-cols-3 py-[1rem]   ">
+                                            <div className="active md:col-span-2 ">
+                                                <a target="_blank" href={e.linkweb}>
 
-
-                                {/* <!-- proyecto EduSync --> */}
-                                <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                                    <div className="active md:col-span-2 ">
-                                        <a target="_blank" href="https://edusync-ten.vercel.app/">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/EduSync logo.png" alt="EduSync" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.EduSync}</p>
-                                        </div>
-                                        <div className=" ">
-
-                                            <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto">
-                                                <div className="flex justify-center flex-col ">
-
-                                                        <div className=" bg-[#3d8af6]">
-                                                            <p className="text-center   text-[1.2rem]">React Js</p>
-
-                                                        </div>
-                                                        <div className="pastilla-tailwind bg-[#4352dc]">
-                                                            <p className="text-center text-[#fff] text-[1.2rem]">CSS</p>
-
-                                                        </div>
-                                                </div>
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="pastilla-tailwind bg-[#38b260]">
-                                                        <p className="text-center text-[#050505] font-bold text-[1.2rem]">Node Js</p>
-
-                                                    </div>
-                                                    <div className="pastilla-tailwind bg-[#3f53ec]">
-                                                        <p className="text-center text-[#fff] text-[1.2rem]">Postgre SQL</p>
-
-                                                    </div>
-
-                                                </div>
-
-
+                                                    <img className=" md:cursor-pointer transition duration-75 ease-linear w-[350px] mx-auto  max-h-maximoAlto-img " src={e.imagenProyecto} alt="EduSync" />
+                                                </a>
                                             </div>
-
-
-
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1 ">
-
-                                            <a target="_blank" href="https://edusync-ten.vercel.app/"
-                                                className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
-
-                                            <a target="_blank"
-                                                href="https://github.com/Otorb/edutech"
-                                                className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
-                                        </div>
-                                    </section>
-                                </article>
-                                {/* <!-- proyecto buscador de cuenta github --> */}
-                                <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                                    <div className="active md:col-span-2 ">
-                                        <a target="_blank" href="https://prueba-tecnica-lautaro.netlify.app/">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/vista-desktop-mobile-githubsearch.png" alt="buscador de github" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.searchGithub}</p>
-                                        </div>
-                                        <div className=" ">
-
-                                            <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto">
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className=" bg-[#3d8af6]">
-                                                        <p className="text-center   text-[1.2rem]">React Js</p>
-
-                                                    </div>
+                                            <section>
+                                                <div className="">
+                                                    <p className="text-[2rem] text-[#000] font-bold">{e.tituloProyecto}</p>
                                                 </div>
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className="pastilla-tailwind bg-[#4352dc]">
-                                                        <p className="text-center text-[#fff] text-[1.2rem]">CSS</p>
-
-                                                    </div>
+                                                <div className="flex justify-center flex-row  flex-wrap gap-3 h-auto w-auto">
+                                                    {e.TechUsada.map(e =>
+                                                        <p key={e.id} className="bg-[#7b7c83] rounded-xl p-2 text-center text-[#fff] text-[1rem]">{e.nombre}</p>
+                                                    )}
                                                 </div>
-
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1 ">
-
-                                            <a target="_blank" href="https://prueba-tecnica-lautaro.netlify.app/"
-                                                className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
-
-                                            <a target="_blank"
-                                                href="https://github.com/Lautaro-Di-Salvo-Code/prueba-tecnica-buscadorPerfilGitHub"
-                                                className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
-                                        </div>
-                                    </section>
-                                </article>
-                                {/* <!-- proyecto espacio --> */}
-                                <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                                    <div className="active md:col-span-2 ">
-                                        <a target="_blank" href="https://search-country-web.netlify.app/#/All">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/SearchCountry.png" alt="proyecto busqueda paises" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.searchcountry}</p>
-                                        </div>
-                                        <div className=" ">
-
-                                            <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto">
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className=" bg-[#3d8af6]">
-                                                        <p className="text-center   text-[1.2rem]">React Js</p>
-
-                                                    </div>
+                                                <div className=" m-4 flex justify-evenly gap-1 ">
+                                                    {
+                                                        e.linkweb ?
+                                                            <a target="_blank" href={e.linkweb}
+                                                                className="a_links"
+                                                            // className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk"
+                                                            >web</a>
+                                                            : ""
+                                                    }
+                                                    <a target="_blank"
+                                                        href={e.linkRepo}
+                                                        className="a_links"
+                                                    // className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  "
+                                                    >codigo</a>
                                                 </div>
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className="pastilla-tailwind bg-[#3fe1f6]">
-                                                        <p className="text-center text-[#000] text-[1.2rem]">Tailwind</p>
-
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1 ">
-
-                                            <a target="_blank" href="https://search-country-web.netlify.app/#/All"
-                                                className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
-
-                                            <a target="_blank"
-                                                href="https://github.com/Lautaro-Di-Salvo-Code/search-country"
-                                                className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
-                                        </div>
-                                    </section>
-                                </article>
-
-                                {/* <!-- portfolio --> */}
-                                <article className="mx-auto ancho-proyectos md:grid md:grid-cols-3 py-[1rem]   border-projects">
-                                    <div className="active  md:col-span-2">
-                                        <img className=" md:cursor-pointer transition duration-75 ease-linear w-auto mx-auto max-h-maximoAlto-img" src="../../assets/imagen-portfolio-proyecto.png"
-                                            alt="" />
-
-                                    </div>
-                                    <section className="">
-                                        <div className="projects-text-color">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.portfolio} </p>
-                                        </div>
-                                        <div className=" info-projects">
-
-
-                                            <div className=" gap-2 grid  grid-cols-2  max-w-maximoAnchosmallwide  mx-auto">
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className=" bg-[#3d8af6]">
-                                                        <p className="text-center   text-[1.2rem]">React Js</p>
-
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className="pastilla-tailwind bg-[#3fe1f6]">
-                                                        <p className="text-center text-[#000] text-[1.2rem]">Tailwind</p>
-
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-
-
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1">
-
-
-
-                                            <a target="_blank" href="https://github.com/Lautaro-Di-Salvo-Code/My-Page"
-                                                className=" py-[.5rem] rounded-xl px-[1rem] bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:cursor-pointer md:hover:scale-110  transition duration-75 ease-linear  box-shadow-tech-desk">{texto.proyectos.codigo}</a>
-                                        </div>
-                                    </section>
-                                </article>
-                                <article className="mx-auto md:grid md:grid-cols-3 py-[1rem]  border-projects">
-                                    <div className="active md:col-span-2">
-                                        <a target="_blank" href="https://turismo-espacial-practica-front.netlify.app/">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linear  w-auto mx-auto  max-h-maximoAlto-img " src="../../assets/space.png" alt="" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.turismoespacial}</p>
-                                        </div>
-                                        <div className=" ">
-
-                                            <div className="grid grid-cols-3   gap-2 max-w-maximoAnchosmallwide  mx-auto">
-                                                <div className="flex justify-center flex-col ">
-
-                                                    <div className="  bg-[#f42e2e]">
-                                                        <p className=" text-center text-[1.2rem]">HTML</p>
-
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-center flex-col ">
-
-                                                    <div className=" bg-[#4352dc]">
-                                                        <p className="text-center  text-[1.2rem]">CSS</p>
-
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-center flex-col ">
-                                                    <div className="flex justify-center">
-
-                                                    </div>
-                                                    <div className=" bg-[#fff93f]">
-                                                        <p className="text-center  text-[#000] text-[1.2rem]">JavaScript</p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1 ">
-
-                                            <a target="_blank" href="https://turismo-espacial-practica-front.netlify.app/"
-                                                className=" py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk">WEB</a>
-
-                                            <a target="_blank"
-                                                href="https://github.com/Lautaro-Di-Salvo-Code/proyecto-turismo-espacial"
-                                                className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  ">{texto.proyectos.codigo}</a>
-                                        </div>
-                                    </section>
-                                </article>
-                                {/* <!-- pizzeria --> */}
-                                <article className="mx-auto md:grid md:grid-cols-3 py-[1rem] border-projects">
-
-                                    <div className="active md:col-span-2">
-                                        <a href="https://lautarodisalvosmco.wixsite.com/prueba1smc" target="_blank">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linearh-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame crocante.png"
-                                                alt="" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="projects-text-color">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.pizzeria} </p>
-                                        </div>
-                                        <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
-                                            <div className="flex justify-center ">
-
-                                                <img className="on-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt="" />
-
-                                            </div>
-                                        </div>
-                                        <div className=" m-4 flex justify-center gap-1">
-
-                                            <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/prueba1smc"
-                                                className="py-[.5rem] px-[1rem] rounded-xl  bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos  md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk ">
-                                                WEB
-                                            </a>
-
-
-                                        </div>
-                                    </section>
-                                </article>
-
-                                {/* <!-- odontologia --> */}
-                                <article className="mx-auto md:grid md:grid-cols-3  py-[1rem] ">
-
-                                    <div className="active  md:col-span-2">
-                                        <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/farmacia-centrosalud">
-
-                                            <img className=" md:cursor-pointer transition duration-75 ease-linear  h-auto w-[18rem] md:w-[22rem] mx-auto " src="../../assets/frame odontologia.png"
-                                                alt="" />
-                                        </a>
-
-                                    </div>
-                                    <section>
-
-                                        <div className="projects-text-color">
-                                            <p className="text-[2rem] text-[#000] font-bold">{texto.proyectos.odontologia} </p>
-                                        </div>
-                                        <div className="flex justify-center max-w-maximoAnchosmallwide py-4 mx-auto flex-col ">
-                                            <div className="flex justify-center ">
-
-                                                <img className="on-75 ease-linear h-[4rem] " src="../../assets/wix.svg" alt="" />
-
-                                            </div>
-                                        </div>
-                                        <div className=" m-4 flex justify-evenly gap-1">
-
-                                            <a target="_blank" href="https://lautarodisalvosmco.wixsite.com/farmacia-centrosalud"
-                                                className="py-[.5rem] px-[1rem] rounded-xl bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear  box-shadow-tech-desk ">
-                                                WEB
-                                            </a>
-                                        </div>
-                                    </section>
-                                </article>
+                                            </section>
+                                        </article>
+                                    ))
+                                }
                             </section>
                         </article>
                     </div>
                 </article>
-
             </section>
-
         </>
     )
 }
