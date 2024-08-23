@@ -46,7 +46,7 @@ export const Main = () => {
 
                         <article className="flex justify-center flex-wrap py-[25px] content-center flex-grow">
                             <img className="h-auto object-fill  rounded-full ssm:w-[16rem]  md:p-[2rem] md:w-[21rem]"
-                                src="../../public/assets/imagenMia.png" alt="" />
+                                src="../assets/imagenMia.png" alt="" />
                         </article>
 
 
