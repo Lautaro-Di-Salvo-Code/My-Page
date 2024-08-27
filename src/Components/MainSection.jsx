@@ -24,7 +24,7 @@ export const Main = () => {
 
 
                 <article
-                    className="box-shadow-aboutme rounded-[2.4rem] bg-box-sections-bgcolor mx-auto w-full md:mx-auto relative top-[5rem]  mb-[13rem] max-w-maximoAnchosmallwide ">
+                    className="animacionView box-shadow-aboutme rounded-[2.4rem] bg-box-sections-bgcolor mx-auto w-full md:mx-auto relative top-[5rem]  mb-[13rem] max-w-maximoAnchosmallwide ">
 
                     <div className="mx-auto  w-full md:grid md:grid-cols-3 ">
 

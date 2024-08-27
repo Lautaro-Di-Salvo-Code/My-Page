@@ -19,7 +19,7 @@ export const Aboutme = () => {
                 <p className="a flex justify-center w-full text-[1.3rem] my-[5px] md:text-[2rem] text-titles-section-color">{texto.sobreMi.tecnologias}</p>
                 <section className=" flex flex-wrap justify-center mx-auto  mb-[1rem]  gap-[7px] max-w-maximoAnchoUltrawide">
                     {ArrayTech.map(e => (
-                        <div key={e.id} className="flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
+                        <div key={e.id} className="animacionView flex justify-center flex-col   bg-box-sections-bgcolor dimensiones-cajas-tech  rounded-xl shadow-tech">
                             <div className="flex justify-center">
                                 <img className="ancho-imagenes-tech " src={e.img} />
                             </div>

@@ -2,9 +2,36 @@ import { useContext } from "react"
 import { ContextoGlobal } from "../../App"
 import { FaWhatsapp } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
-export const Contact = () => {
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+import data from '../../ObjectData/ObjectData copy.json'
+import { Toaster, toast } from 'sonner'
+// import  '../../input.css'
 
-    const { texto } = useContext(ContextoGlobal)
+
+export const Contact = () => {
+    const schema = yup.object({
+        email: yup.string().required(),
+        nombreYapellido: yup.string().required(),
+        contactarmePara: yup.string().required(),
+        celular: yup.number().required(),
+    }).required();
+
+    const Submited = () => {
+        // toast.success("Datos enviados")
+    }
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(schema)
+    });
+    const onSubmit = (data) => {
+        toast.success("Datos enviados");
+    } 
+
+    
+
+    const contactO = data.es.contacto
 
     return (
         <>
@@ -13,11 +40,12 @@ export const Contact = () => {
                     className=" lg:pt-[5rem] pt-[2rem]  
             font-bold tracking-[5px]  text-[2rem]
             md:text-[3rem]   text-titles-section-color">
-                    {texto.contacto.titulo}</h2>
+                    {contactO.Contacto}</h2>
             </div>
 
-            <section className="my-margin-secciones-global md:grid md:grid-cols-2 mt-[1rem]
-     mb-[6rem] bg-box-sections-bgcolor rounded-xl mx-[1rem] md:mx-auto p-[1rem]  max-w-maximoAnchosmallwide box-shadow-form">
+            <section className="animacionView my-margin-secciones-global md:grid md:grid-cols-2 mt-[1rem]
+            mb-[6rem] bg-box-sections-bgcolor rounded-xl mx-[1rem] md:mx-auto p-[1rem] 
+                max-w-maximoAnchosmallwide box-shadow-form">
 
                 <div className=" md:grid md:place-items-center">
 
@@ -25,7 +53,7 @@ export const Contact = () => {
                     <article>
                         <div className="flex justify-center w-[62%] mx-auto">
 
-                            <b className="text-center text-[1.2rem] text-pretty  leading-[3rem]  md:text-[2rem]">{texto.contacto.agradecimiento} !</b>
+                            <b className="text-center text-[1.2rem] text-pretty  leading-[3rem]  md:text-[2rem]">{contactO.agradecimiento} !</b>
                         </div>
 
 
@@ -40,9 +68,9 @@ export const Contact = () => {
                                             <FaWhatsapp className="h-auto w-[3rem] drop-shadow-2xl text-[#636363]" />
                                         </a>
                                     </div>
-                                    <div className=" flex justify-center">
+                                    {/* <div className=" flex justify-center">
                                         <b>WHATSAPP</b>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="flex justify-center flex-col">
@@ -52,29 +80,41 @@ export const Contact = () => {
                                             <MdAttachEmail className="h-auto w-[3rem] drop-shadow-2xl text-[#636363]" />
                                         </a>
                                     </div>
-                                    <div className="flex justify-center">
+                                    {/* <div className="flex justify-center">
                                         <b>GMAIL</b>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </article>
                     </article>
                 </div>
-                <form action="https://formspree.io/f/xzbnapnk" method="POST" className="flex flex-col justify-center">
-                    <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
-                        type="text" name="first name" id="first name" placeholder={texto.contacto.nombre} />
-                    <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
-                        type="text" name="last name" id="last name" placeholder={texto.contacto.apellido} />
-                    <input className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
-                        type="email" name="email" id="email" placeholder="Email " />
-                    <textarea className="bg-box-sections-bgcolor placeholder:px-[1.5rem] placeholder:text-[#000]"
+                <form onSubmit={handleSubmit(onSubmit)} action="https://formspree.io/f/xzbnapnk" method="POST" className="flex flex-col justify-center">
+
+                    <input className="claseTexto bg-box-sections-bgcolor focus:bg-[#ededed] p-[1rem] placeholder:text-[#000]"
+                        type="text" name="last name" id="last name" {...register("nombreYapellido")} placeholder={contactO.nombreYapellido} />
+                    <i className="text-[#e72d2d] text-center " >{errors?.nombreYapellido?.message && "Ingrese su nombre y apellido ❗"}</i>
+
+                    <input className="claseEmail bg-box-sections-bgcolor focus:bg-[#ededed] p-[1rem] placeholder:text-[#000]"
+                        type="email" name="email" id="email" {...register("email")} placeholder="Email" />
+                    <p className="text-[#e72d2d] text-center ">{errors?.email?.message && "Ingresar email ❗"}</p>
+
+                    <input className="claseTel bg-box-sections-bgcolor focus:bg-[#ededed] p-[1rem] placeholder:text-[#000]"
+                        type="tel" name="number" id="number" {...register("celular")} placeholder="Celular" />
+                    <p className="text-[#e72d2d] text-center ">{errors?.celular?.message && "Ingresa tu celular ❗"}</p>
+                    <textarea className="claseTextArea bg-box-sections-bgcolor h-[150px] min-h-[140px]  p-[1rem] focus:bg-[#ededed] placeholder:text-[#000]"
                         name="message" id="message" cols="30" rows="10"
-                        placeholder={texto.contacto.placeholdertextarea}></textarea>
-                    <button className=" text-[#2f2e2e]   w-[6rem] mx-auto  h-[3rem] ">{texto.contacto.enviar}</button>
+                        {...register("contactarmePara")}
+                        placeholder={contactO.razonContacto}
+
+                        ></textarea>
+
+                    <p className="text-[#e72d2d] text-center ">{errors.contactarmePara?.message && "Pon la razon para colaborar, por favor"}</p>
+
+                    <button onClick={Submited} type="submit" className=" text-[#2f2e2e] hover:bg-[#ededed] p-2  w-fit mx-auto  h-fit ">{contactO.enviar}</button>
                 </form>
 
             </section>
-
+            <Toaster  richColors position="bottom-center" />
         </>
     )
 }

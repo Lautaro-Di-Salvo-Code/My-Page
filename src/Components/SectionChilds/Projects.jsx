@@ -4,30 +4,26 @@ import data from '../../ObjectData/ObjectData copy.json'
 import { ArrayTech } from "./Tecnologias"
 import '../SectionChilds/stylesLinksProjects.css'
 
-// console.log(data)
 const dataProjects = data.es.proyectos
 
 export const Projects = () => {
-
-    const { texto } = useContext(ContextoGlobal)
 
     return (
         <>
 
             <div className=" flex justify-center w-full ">
                 <h2 id="proyectos"
-                    className=" lg:pt-[5rem] pt-[2rem]  font-bold tracking-[5px]  text-[2rem]
-            md:text-[3rem]  text-titles-section-color">
+                    className="lg:pt-[5rem] pt-[2rem]  font-bold tracking-[5px]  text-[2rem] md:text-[3rem] text-titles-section-color">
                     Proyectos</h2>
             </div>
-            <section className=" bg-box-sections-bgcolor shadow-tech-desk  h-[171rem] md:h-[105rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
+            <section className="animacionView bg-box-sections-bgcolor shadow-tech-desk  h-[187rem] md:h-[105rem] rounded-[2.4rem] mx-5  mt-[1rem] mb-[13rem] md:mx-auto max-w-maximoAnchosmallwide">
                 <article className="  relative top-[3rem]  ">
                     <div className="mx-auto w-full   absolute top-0  index2">
                         <article className="h-fit gap-7 p-5 text-center ">
                             <section className=" ">
                                 {
                                     dataProjects.map(e => (
-                                        <article key={e.id} className="mx-auto md:grid md:grid-cols-3 py-[1rem]   ">
+                                        <article key={e.id} className="animacionView mx-auto md:grid md:grid-cols-3 py-[1rem]   ">
                                             <div className="active md:col-span-2 ">
                                                 <a target="_blank" href={e.linkweb}>
 
@@ -52,11 +48,18 @@ export const Projects = () => {
                                                             >web</a>
                                                             : ""
                                                     }
-                                                    <a target="_blank"
+                                                    {
+                                                        e.linkRepo ?
+                                                            <a target="_blank"
+                                                                href={e.linkRepo}
+                                                                className="a_links">codigo</a>
+                                                            : ""
+                                                    }
+                                                    {/* <a target="_blank"
                                                         href={e.linkRepo}
                                                         className="a_links"
                                                     // className="bg-color-botonesproyectos md:hover:bg-hovercolor-botonesproyectos rounded-xl py-[.5rem] px-[1rem] md:hover:scale-110 md:cursor-pointer transition duration-75 ease-linear box-shadow-tech-desk  "
-                                                    >codigo</a>
+                                                    >codigo</a> */}
                                                 </div>
                                             </section>
                                         </article>

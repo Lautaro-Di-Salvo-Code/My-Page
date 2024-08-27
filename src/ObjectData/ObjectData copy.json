@@ -87,15 +87,31 @@
           },
           {
             "id": 2,
-            "nombre": "CSS"
+            "nombre": "reduxToolkit"
           },
           {
             "id": 3,
-            "nombre": "Node Js"
+            "nombre": "React Data Tables"
           },
           {
             "id": 4,
+            "nombre": "MVC"
+          },
+          {
+            "id": 5,
+            "nombre": "CSS"
+          },
+          {
+            "id": 6,
+            "nombre": "Node Js"
+          },
+          {
+            "id": 7,
             "nombre": "PostgreSQL"
+          },
+          {
+            "id": 8,
+            "nombre": "Figma"
           }
         ]
       },
@@ -134,10 +150,18 @@
           },
           {
             "id": 2,
-            "nombre": "Tailwind"
+            "nombre": "useContext"
           },
           {
             "id": 3,
+            "nombre": "useParams"
+          },
+          {
+            "id": 4,
+            "nombre": "Tailwind"
+          },
+          {
+            "id": 5,
             "nombre": "Json"
           }
         
@@ -159,6 +183,14 @@
           },
           {
             "id": 3,
+            "nombre": "React Icons"
+          },
+          {
+            "id": 4,
+            "nombre": "Figma"
+          },
+          {
+            "id": 5,
             "nombre": "Json"
           }
         
@@ -182,6 +214,10 @@
           {
             "id": 3,
             "nombre": "JavaScript"
+          },
+          {
+            "id": 4,
+            "nombre": "XMLHttpRequest"
           }
         
         ]
@@ -196,7 +232,6 @@
             "id": 1,
             "nombre": "Wix"
           }
-         
         
         ]
       },
@@ -215,9 +250,9 @@
     ],
     "contacto": {
       "Contacto": "Contacto",
-      "nombre": "Nombre",
-      "apellido": "Apellido",
+      "nombreYapellido": "Tu nombre y apellido",
       "agradecimiento": "Gracias por llegar hasta aquí",
+      "razonContacto": "Cuentame en que te puedo ayudar o colaborar",
       "enviar": "Enviar",
       "placeholdertextarea": "Comentario que desees agregar"
     }

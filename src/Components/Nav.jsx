@@ -1,30 +1,27 @@
-// import { useRef } from "react"
-// import {NavLink} from "react-router-dom"
-
-import { useContext, useEffect } from "react"
-import { ContextoGlobal } from "../App"
 
 import data from "../ObjectData/ObjectData copy.json"
 
 
 export const Nav = () => {
 
-    const { texto, HandleLang } = useContext(ContextoGlobal)
     const navOptions = data.es.navbar
     const clickOptions = () => {
-
         document.querySelector(".nav-mobile").classList.toggle("active")
     }
     return (
-
+        // md:text-[1.3rem]  vlg:text-[2rem]  para el navOptions
         <>
             <div>
-                <nav className=" fixed bg-[#0d0a0ad9] w-full hidden md:block mx-auto z-index-sup    h-[7rem] ">
+                <nav className=" fixed bg-[#0d0a0ad9] w-full hidden md:block mx-auto z-index-sup  alturaNav   ">
                     <div className=" flex flex-row flex-wrap h-[7rem] mx-auto items-center justify-around max-w-maximoAnchosmallwide vlg:max-w-maximoAnchoUltrawide">
                         {
                             navOptions.map(e => (
                                 <div key={e.id} className=" pt-[1rem] div-nav1">
-                                    <a className=" cursor-pointer NavPresentacion   hover:text-[text-[#dddcdc]    md:text-[1.3rem]  vlg:text-[2rem]    mx-4"
+                                    <a className="navAnimation cursor-pointer
+                                        NavPresentacion 
+                                        hover:text-[#dddcdc]   
+                                        
+                                        mx-4"
                                         href={e.href}>{e.navOption}</a>
                                 </div>
                             ))
@@ -43,7 +40,7 @@ export const Nav = () => {
                         {
                             navOptions.map(e => (
                                 <div key={e.id}>
-                                    <a  onClick={clickOptions} href={e.href} className=" flex justify-center text-[2rem] text-[#000]  mx-4">{e.navOption}</a>
+                                    <a onClick={clickOptions} href={e.href} className=" flex justify-center text-[2rem] text-[#000]  mx-4">{e.navOption}</a>
                                 </div>
                             ))
                         }
