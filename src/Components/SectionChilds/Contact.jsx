@@ -26,7 +26,7 @@ export const Contact = () => {
         resolver: yupResolver(schema)
     });
     const onSubmit = (data) => {
-        toast.success("Datos enviados");
+        // toast.success("Datos enviados");
     } 
 
     
@@ -114,7 +114,6 @@ export const Contact = () => {
                 </form>
 
             </section>
-            <Toaster  richColors position="bottom-center" />
         </>
     )
 }

@@ -236,7 +236,6 @@ b {
 }
 .animacionView{
     opacity: 5%;
-    /* animation-timeline: view(inline 20%); */
     animation: ProyectosAnim linear  both;
     animation-timeline: view(block);
     animation-range: 10% 20%;
@@ -245,5 +244,17 @@ b {
 @keyframes ProyectosAnim {
     to{
         opacity: 100%;
+    }
+}
+
+.animationWelcome{
+  opacity: 100%;
+  animation: animWelcome linear  both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 370px;
+}
+@keyframes animWelcome {
+    to{
+        opacity: 10%;
     }
 }

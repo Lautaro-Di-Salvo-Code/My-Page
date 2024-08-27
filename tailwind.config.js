@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        "yoCodeando": "url('/src/assets/fondoback-optimizado (1).webp')"
+        "yoCodeando": "url('/src/assets/MiFondoPortfolio.jpg')"
       }
     },
     maxWidth:{
